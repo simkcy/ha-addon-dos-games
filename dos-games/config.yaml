@@ -1,6 +1,6 @@
 name: "Chinese DOS Games"
-description: "在浏览器中玩经典中文DOS游戏 - 仙剑奇侠传、金庸群侠传、大富翁等"
-version: "1.0.0"
+description: "在浏览器中玩经典中文DOS游戏"
+version: "1.0.1"  # 增加版本号
 slug: "dos_games"
 url: "https://github.com/simkcy/ha-addon-dos-games"
 arch:
@@ -10,13 +10,8 @@ arch:
   - armv7
 ports:
   "5000/tcp": 5000
-ports_description:
-  "5000/tcp": "DOS游戏网页界面"
 map:
-  - config:rw
   - share:rw
-  - ssl:rw
-options:
-  data_path: "/share/dos-games"
-schema:
-  data_path: "str"
+boot: "auto"
+options: {}
+schema: {}
