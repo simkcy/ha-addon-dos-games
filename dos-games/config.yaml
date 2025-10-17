@@ -1,6 +1,6 @@
 name: "Chinese DOS Games"
 description: "在浏览器中玩经典中文DOS游戏"
-version: "1.0.1"  # 增加版本号
+version: "1.0.2"
 slug: "dos_games"
 url: "https://github.com/simkcy/ha-addon-dos-games"
 arch:
@@ -12,6 +12,9 @@ ports:
   "5000/tcp": 5000
 map:
   - share:rw
+  - config:rw
 boot: "auto"
-options: {}
-schema: {}
+options:
+  data_path: "/config/dos-games"
+schema:
+  data_path: "str"
